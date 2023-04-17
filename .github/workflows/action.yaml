@@ -1,6 +1,8 @@
 name: Optimal Stopping Point 
 
+# Controls when the workflow will run
 on:
+
   workflow_dispatch:
   # Allows you to run this workflow manually from the Actions tab
   # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -23,7 +25,7 @@ jobs:
       - name: Setup Python environment
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.9'
       - name: Install dependencies
         run: | 
           python -m pip install --upgrade pip 
